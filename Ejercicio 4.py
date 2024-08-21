@@ -2,7 +2,6 @@ import random
 import secrets
 import string
 
-
 character = string.ascii_letters + string.digits + string.punctuation
 
 passR = [
@@ -10,18 +9,10 @@ passR = [
     random.choice(string.ascii_uppercase),
     random.choice(string.digits),
     random.choice(string.punctuation)
-]
-
-while len(passR) < 8:
-    passR.append(secrets.choice(character))
-
-if  len(passR) > 16:
-    passR[:16]
-    
-    
+]+ [secrets.choice(character) for _ in range(8,16)]
 
 random.shuffle(passR)
-result = "".join(passR)
+result = "".join(passR[:16])
 print("Contraseña Generada", result)
 
 
