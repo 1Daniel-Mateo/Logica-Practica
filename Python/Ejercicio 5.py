@@ -10,11 +10,10 @@ def fibunochi(f):
     a,b  = 0,1
     while  b < f:
         a,b = a+b,a
-    return b == f
+        return b == f
  
 def par(n):
     return n % 2 == 0
-
 
 
 def verficar(v):
