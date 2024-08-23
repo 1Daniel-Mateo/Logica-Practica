@@ -6,6 +6,6 @@ def  almuerzos_semana(n):
 lista_almuerzo = [input(f"{i+1}. Ingresa almuerzo: ")for i in range(10)]
 
     
-print(almuerzos_semana(lista_almuerzo))
+almuerzos_semana(lista_almuerzo)
 
 
