@@ -1,3 +1,3 @@
-# Logica-Practica
+# Logica-Practica 
 
-### Primer trabajo subido
+### Primer trabajo de python
